@@ -114,6 +114,26 @@
         .close-button button:hover {
             background-color: #c0392b;
         }
+
+        .pdf-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pdf-button button {
+            padding: 10px 20px;
+            background-color: #cc27a3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pdf-button button:hover {
+            background-color: #3498db;
+        }
     </style>
 </head>
 <body>
@@ -132,6 +152,7 @@
             <a href="#activities">Activities and Honors</a>
             <a href="#funding">Funding</a>
             <a href="#publications">Publications</a>
+            <a href="#download">DOWNLOAD CV AS PDF</a>
         </div>
 
         <section class="section" id="education">
@@ -288,8 +309,41 @@
             </div>
 </section>
 
+<section class="section" id="download">
+    <h2>DOWNLOAD</h2>
+    <div class="pdf-button">
+        <button id="downloadBtn">Download PDF</button>
+    </div>
+    <div class="close-button">
+        <button onclick="closeSection('download')">Close</button>
+    </div>
+</section>
+
+
 
     </div>
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function() {
+            // Replace 'path/to/your/pdf.pdf' with the actual path to your PDF file
+            var pdfFilePath = 'CV_Hetzel.pdf';
+            
+            // Create an anchor element
+            var link = document.createElement('a');
+            link.href = pdfFilePath;
+            
+            // Set the download attribute to force download
+            link.download = 'CV_Hetzel.pdf';    
+            
+            // Append the anchor to the body
+            document.body.appendChild(link);
+            
+            // Trigger the click event of the anchor
+            link.click();
+            
+            // Clean up
+            document.body.removeChild(link);
+        });
+</script>
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
