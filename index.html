@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Hetzel - Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        li > ul > li {
+            font-size: 14px;
+            margin-left: 10px;
+            list-style-type: circle;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            display: none; /* Hide all sections initially */
+        }
+
+        .section.active {
+            display: block; /* Show active section */
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 5px; /* Added margin-bottom */
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #2980b9;
+        }
+        .close-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .close-button button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-button button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabrina Hetzel</h1>
+        <p>shetzel@smu.edu | (254) 760-2768</p>
+    </header>
+
+    <div class="container">
+        <div class="nav-buttons">
+            <a href="#education">Education</a>
+            <a href="#programming">Programming Experience</a>
+            <a href="#work">Work Experience</a>
+            <a href="#research">Research Experience</a>
+            <a href="#conferences">Conferences Presented</a>
+            <a href="#activities">Activities and Honors</a>
+            <a href="#funding">Funding</a>
+            <a href="#publications">Publications</a>
+        </div>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Pursuing PhD in Applied and Computational Mathematics</strong>, Anticipated May 2024, Southern Methodist University, Dallas, TX</li>
+                <li><strong>Master of Science in Applied and Computational Mathematics</strong>, May 2021, Southern Methodist University, Dallas, TX</li>
+                <li><strong>Bachelor of Science in Mathematics</strong>, May 2019, Tarleton State University, Stephenville, TX</li>
+                <li><strong>Bachelor of Science in Economics</strong>, May 2019, Tarleton State University, Stephenville, TX</li>
+            </ul>
+            <div class="close-button">
+                <button onclick="closeSection('education')">Close</button>
+            </div>
+        </section>
+
+        <section class="section" id="programming">
+            <h2>Programming Experience</h2>
+            <p>MATLAB, Python, Mathematica, R, C</p>
+            <div class="close-button">
+                <button onclick="closeSection('programming')">Close</button>
+            </div>
+        </section>
+
+        <section class="section" id="work">
+    <h2>Work Experience</h2>
+    <ul>
+        <li>
+            <strong>Lecturer</strong>, Southern Methodist University, Dallas, TX, January 2023 – May 2023
+            <ul>
+                <li>Provide educational instruction to undergraduate students taking the class Calculus 1</li>
+                <li>Develop material to assist students in learning such as homework, labs, and exams</li>
+                <li>Give feedback on assignments and assist outside of class to further aid in students’ understanding</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Research Training Group (RTG) Fellow</strong>, Southern Methodist University, Dallas, TX, August 2020 – August 2023
+            <ul>
+                <li>Maintain good progress in academic studies and in conducting research towards the dissertation</li>
+                <li>Collaborate with peers to discuss alike interests pertaining to ongoing research</li>
+                <li>Mentor undergraduate students through the summer research experience for undergraduate (REU) programs</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Graduate Teaching Assistant</strong>, Southern Methodist University, Dallas, TX, August 2019 – May 2020
+            <ul>
+                <li>Assist students in their understanding of mathematical concepts by explaining theoretical ideas behind the concepts and then applying them to problems related to business and economics</li>
+                <li>Monitored assessments for students taking Business Calculus</li>
+                <li>Responsible for grading quizzes and managing quiz grades online via Canvas</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Math Tutor and Grader</strong>, Tarleton State University, Stephenville, TX, September 2016 – May 2019
+            <ul>
+                <li>Tutor students weekly in mathematical concepts which include Plane Trigonometry, Pre-Calculus, Business Calculus, Calculus 1, 2, and 3, and Statistics</li>
+                <li>Provide guidance with instructional material to aid students in their studies and provide a better foundation for note-taking and learning</li>
+                <li>Accountable for grading homework in a range of classes including Calculus and Applied Matrix Algebra</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Private Math Tutor</strong>, November 2016 – May 2019
+            <ul>
+                <li>Tutor homeschool students by working through math curriculum provided by Math-U-See</li>
+                <li>Test student’s knowledge with weekly tests over past material</li>
+                <li>Teach students new concepts to be able to work through exercises and apply to real-world scenarios</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="close-button">
+                <button onclick="closeSection('work')">Close</button>
+            </div>
+</section>
+
+
+        <section class="section" id="research">
+    <h2>Research Experience</h2>
+    <ul>
+        <li><strong>Mathematical Modeling in Nonlinear Optics</strong>, Southern Methodist University, Dallas, TX, August 2021 – Present</li>
+        <li><strong>Selected to attend Siegman International School on Lasers</strong>, University of Warsaw, Chęciny, Poland, June 2022 – July 2022</li>
+        <li><strong>Invited to collaborate at Ultrafast Laser Technique laboratory</strong>, Institute of Physical Chemistry PAS, Warsaw, Poland, June 2022</li>
+        <li><strong>Epidemiology Modeling</strong>, Southern Methodist University, Dallas, TX, August 2020 – May 2021</li>
+        <li><strong>AIM Summer School on Dynamics and data in the COVID-19 pandemic</strong>, American Institute of Mathematics, Virtual, June 2020 – July 2020</li>
+        <li><strong>Neuroscience Research</strong>, Southern Methodist University, Dallas, TX, January 2020 – May 2020</li>
+        <li><strong>Undergraduate Research Assistantship</strong>, Tarleton State University, Stephenville, TX, August 2018 – May 2019</li>
+        <li><strong>Study Abroad Research</strong>, Tarleton State University, Stephenville, TX, May 2018 – October 2018</li>
+        <li><strong>First Year Research Experience Intern</strong>, Tarleton State University, Stephenville, TX, May 2017 – August 2017</li>
+    </ul>
+    <div class="close-button">
+                <button onclick="closeSection('research')">Close</button>
+            </div>
+</section>
+
+<section class="section" id="conferences">
+    <h2>Conferences Presented</h2>
+    <ul>
+        <li>Annual SIAM Meeting Texas-Louisiana Section – 2020, 2022</li>
+        <li>Trends in Soliton Dynamics and Singularity Formation for Nonlinear Dispersive PDEs Workshop – 2022</li>
+        <li>Siegman International School on Lasers  - 2022</li>
+        <li>Southern Methodist University Research Day – 2022, 2023</li>
+        <li>DFW Virtual Poster Competition in Mathematics – 2021</li>
+        <li>NSF Student Conference on COVID-19 Modeling – 2021</li>
+        <li>Texas Undergraduate Mathematics Conference (TUMC) – 2017, 2018</li>
+        <li>Texas/Oklahoma Regional Undergraduate Symposium – 2018, 2019</li>
+        <li>Mathematical Association of America Annual Meeting Texas Section – 2018, 2019</li>
+        <li>Tarleton State University Student Research Symposium – 2018</li>
+    </ul>
+    <div class="close-button">
+                <button onclick="closeSection('conferences')">Close</button>
+            </div>
+</section>
+
+<section class="section" id="activities">
+    <h2>Activities and Honors</h2>
+    <ul>
+        <li>First place in graduate poster session, SMU Research Symposium, March 2022</li>
+        <li>Member of Graduate Student Seminar, SMU Math Graduate Student club, August 2019 – Present</li>
+        <li>Member of Alpha Chi, National Honor Society, Spring 2018 - Present</li>
+        <li>First place in graduate poster presentation, Tarleton Student Research Symposium, Fall 2018</li>
+        <li>Member of Delta Mu Delta, Business Honor Society, Summer 2018 – May 2019</li>
+        <li>Member of National Society of Collegiate Scholars, National Honor Society, August 2017 – May 2019</li>
+        <li>Member of Math Club, Tarleton State University, August 2017 – May 2019</li>
+        <li>Member of Computer Science Club, Tarleton State University, August 2017 – May 2018</li>
+        <li>Dean’s List, Tarleton State University, August 2016 – May 2019</li>
+    </ul>
+    <div class="close-button">
+                <button onclick="closeSection('activities')">Close</button>
+            </div>
+</section>
+
+<section class="section" id="funding">
+    <h2>Funding</h2>
+    <ul>
+        <li>Haberman Dissertation Fellowship, Department of Mathematics at Southern Methodist University, August 2023 – May 2024</li>
+        <br>
+        <li>Dean’s Dissertation Fellowship, Moody School of Graduate and Advanced Studies at Southern Methodist University, August 2023 – May 2024</li>
+        <br>
+        <li>Research Training Group (RTG) fellow, National Science Foundation, August 2020 – August 2023</li>
+    </ul>
+    <div class="close-button">
+                <button onclick="closeSection('funding')">Close</button>
+            </div>
+</section>
+
+<section class="section" id="publications">
+    <h2>Publications</h2>
+    <ul>
+        <li>Sabrina Hetzel, Ross Parker, Alejandro Aceves, “Interaction and generation of soliton-like pulses under the presence of quartic dispersion”, (In progress)</li>
+        <br>
+        <li>P. Parra-Rivas et al., "Bright and Dark Solitons in Pure Quartic Kerr Resonators," 2023 Conference on Lasers and Electro-Optics Europe & European Quantum Electronics Conference (CLEO/Europe-EQEC), Munich, Germany, 2023, pp. 1-1, doi: 10.1109/CLEO/Europe-EQEC57999.2023.10231524.</li>
+        <br>
+        <li>Pedro Parra-Rivas, Sabrina Hetzel, Yaroslav V. Kartashov, Pedro Fernández de Córdoba, J. Alberto Conejero, Alejandro Aceves, and Carles Milián, "Quartic Kerr cavity combs: bright and dark solitons," Opt. Lett. 47, 2438-2441 (2022)</li>
+    </ul>
+    <div class="close-button">
+                <button onclick="closeSection('publications')">Close</button>
+            </div>
+</section>
+
+
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection.classList.contains('active')) {
+                    targetSection.classList.remove('active');
+                } else {
+                    document.querySelectorAll('.section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+
+                    targetSection.classList.add('active');
+
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        function closeSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            section.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
